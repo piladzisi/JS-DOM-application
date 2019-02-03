@@ -60,12 +60,11 @@ document.addEventListener('DOMContentLoaded', () =>{
 		const text = input.value;
 		if (text == '') {
 			input.value = 'please, enter a name';
-		} else{ 
+		} else { 
 			input.value='';
 			const li = createLI(text);
 			ul.appendChild(li);
 		}
-		
 	});
 
 
@@ -73,6 +72,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 		const checkbox = event.target;
 		const checked = checkbox.checked;
 		const listItem = checkbox.parentNode.parentNode;
+		
 		if (checked){
 			listItem.className = 'responded';
 		} else {
